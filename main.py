@@ -18,11 +18,11 @@ from service import sync_parser_app
 import os
 
 dirname = os.path.dirname(__file__)
-sync_service = sync_parser_app.SyncParserApp(config_dir=os.path.join(dirname, 'config.json'))
+app = sync_parser_app.SyncParserApp(config_dir=os.path.join(dirname, 'config.json'))
 
 def main():
     pass
 
 if __name__ == "__main__":
-    sync_service.run(main)
+    app.run(main)
 

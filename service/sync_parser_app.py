@@ -5,7 +5,7 @@ from . import db_pack
 from . import safe_request_pack
 import traceback
 
-class SyncService:
+class SyncParserApp:
     def __init__(self, config_dir):
         self.config = self.get_config_from_json(config_dir)
         self.check_config_keys()

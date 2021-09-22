@@ -14,11 +14,11 @@
 #   "source": "'?'"
 # }
 
-from service import sync_service
+from service import sync_parser_app
 import os
 
 dirname = os.path.dirname(__file__)
-sync_service = sync_service.SyncService(config_dir=os.path.join(dirname,'config.json'))
+sync_service = sync_parser_app.SyncParserApp(config_dir=os.path.join(dirname, 'config.json'))
 
 def main():
     pass
